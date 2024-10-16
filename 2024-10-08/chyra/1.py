@@ -5,7 +5,7 @@ webhook = "https://hook.eu2.make.com/sfa0uqnrm98tj5w4sg7xoomef3cno26y"
 api = "98adbfad6b4b220565d13e94b5769fd7"
 
 def get_weather(lat, lon):
-    url = f"https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&units=metric&appid={api}"
+    url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid={api}"
     response = requests.get(url)
     data = response.json()
 
